@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txt_view_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_view_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="64dp"
+        />
+
+    <Button
+        android:id="@+id/btn_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/login_btn_design"
+        android:layout_above="@id/btn_social_media"
+        android:layout_marginBottom="6dp"
+        android:onClick="onContactBtnClick"
+        />
+
+    <Button
+        android:id="@+id/btn_social_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/login_btn_design_two"
+        android:layout_above="@id/txt_view_login_policy"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="onSocialBtnClick"
+        />
+
+    <TextView
+        android:id="@+id/txt_view_login_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>
