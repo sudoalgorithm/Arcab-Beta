@@ -89,6 +89,7 @@ public class ContactNumberActivity extends AppCompatActivity {
         button.setTextColor(ContextCompat.getColor(mContext,R.color.colorText));
         button.setTypeface(typeface);
         button.setTextSize(textSizeFour);
+        button.setStateListAnimator(null);
 
     }
 

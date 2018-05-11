@@ -54,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         btnContactNumber.setTextSize(btnTextSize);
         btnContactNumber.setTextColor(ContextCompat.getColor(mContext,R.color.colorText));
         btnContactNumber.setTypeface(typeface);
+        btnContactNumber.setStateListAnimator(null);
 
         Button btnSocialMedia = (Button) findViewById(R.id.btn_social_media);
         btnSocialMedia.setText(BTN_CONTACT_SOCIAL_MEDIA);
@@ -61,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSocialMedia.setTextSize(btnTextSize);
         btnSocialMedia.setTextColor(ContextCompat.getColor(mContext,R.color.colorTextPink));
         btnSocialMedia.setTypeface(typeface);
+        btnSocialMedia.setStateListAnimator(null);
 
         TextView textView1 = (TextView) findViewById(R.id.txt_view_login_policy);
         textView1.setText(POLICY_TEXT);
