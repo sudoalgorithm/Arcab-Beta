@@ -1,9 +1,8 @@
-package ae.arcab.arcab;
+package ae.arcab.arcab.Activities;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.media.Image;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +10,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import ae.arcab.arcab.R;
 
 public class MainActivity extends AppCompatActivity {
 

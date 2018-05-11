@@ -1,4 +1,4 @@
-package ae.arcab.arcab;
+package ae.arcab.arcab.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import ae.arcab.arcab.R;
 
 public class ContactNumberActivity extends AppCompatActivity {
 

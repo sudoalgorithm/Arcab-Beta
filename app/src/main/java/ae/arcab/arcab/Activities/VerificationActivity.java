@@ -1,7 +1,9 @@
-package ae.arcab.arcab;
+package ae.arcab.arcab.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import ae.arcab.arcab.R;
 
 public class VerificationActivity extends AppCompatActivity {
 
