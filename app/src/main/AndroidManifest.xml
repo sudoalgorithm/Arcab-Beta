@@ -25,7 +25,15 @@
         <activity
             android:name=".Activities.SocialAccountActivity"
             android:theme="@style/AppThemeTwo" />
-        <activity android:name=".Activities.VerificationActivity"></activity>
+        <activity
+            android:name=".Activities.VerificationActivity"
+            android:theme="@style/AppThemeTwo" />
+        <activity
+            android:name=".Activities.NameActivity"
+            android:theme="@style/AppThemeTwo" />
+        <activity android:name=".Activities.EmailActivity"
+            android:theme="@style/AppThemeTwo"
+            ></activity>
     </application>
 
 </manifest>
