@@ -1,7 +1,7 @@
-package ae.arcab.arcab.Activities;
+package ae.arcab.arcab.Activities.Activities;
 
+import android.content.Context;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import ae.arcab.arcab.Activities.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class NameActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class NameActivity extends AppCompatActivity {
     private static final String HEADING = "What’s Your Name?";
     private static final String FIRST = "first name";
     private static final String LAST = "last name";
+    private Context mContext = this;
 
 
     @Override
@@ -29,42 +31,40 @@ public class NameActivity extends AppCompatActivity {
 
     public void init(){
 
-        int fontSize = 30;
-        int fontSize2 = 20;
-        int fontSize3 = 14;
-        int textSizeFour = 18;
 
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Colfax-Medium.otf");
+
+
+
 
         TextView textView = (TextView) findViewById(R.id.text_view_name);
         textView.setText(HEADING);
-        textView.setTextSize(fontSize);
-        textView.setTypeface(typeface);
+        textView.setTextSize(30);
+        textView.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
 
         EditText editText1 = (EditText) findViewById(R.id.et_first_name_activity);
-        editText1.setTypeface(typeface);
+        editText1.setTypeface(FontUtil.getColfaxMedium(mContext));
         editText1.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
-        editText1.setTextSize(fontSize2);
+        editText1.setTextSize(20);
 
 
         EditText editText2 = (EditText) findViewById(R.id.et_last_name_activity);
-        editText2.setTypeface(typeface);
+        editText2.setTypeface(FontUtil.getColfaxMedium(mContext));
         editText2.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
-        editText2.setTextSize(fontSize2);
+        editText2.setTextSize(20);
 
 
         TextView textView2 = (TextView) findViewById(R.id.text_view_name_activity_one);
         textView2.setText(FIRST);
-        textView2.setTextSize(fontSize3);
-        textView2.setTypeface(typeface);
+        textView2.setTextSize(14);
+        textView2.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView2.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
         textView2.setAllCaps(true);
 
         TextView textView3 = (TextView) findViewById(R.id.text_view_name_activity_second);
         textView3.setText(LAST);
-        textView3.setTextSize(fontSize3);
-        textView3.setTypeface(typeface);
+        textView3.setTextSize(14);
+        textView3.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView3.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
         textView3.setAllCaps(true);
 
@@ -76,8 +76,8 @@ public class NameActivity extends AppCompatActivity {
         button.setText("Next");
         button.setAllCaps(false);
         button.setTextColor(ContextCompat.getColor(this,R.color.colorText));
-        button.setTypeface(typeface);
-        button.setTextSize(textSizeFour);
+        button.setTypeface(FontUtil.getColfaxMedium(mContext));
+        button.setTextSize(18);
         button.setStateListAnimator(null);
 
 

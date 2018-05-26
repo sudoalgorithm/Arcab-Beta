@@ -1,8 +1,7 @@
-package ae.arcab.arcab.Activities;
+package ae.arcab.arcab.Activities.Activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import ae.arcab.arcab.Activities.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class ContactNumberActivity extends AppCompatActivity {
@@ -20,7 +20,7 @@ public class ContactNumberActivity extends AppCompatActivity {
     private static final String HEADING = "Your Number?";
     private static final String COUNTRY_CODE = "AE +971";
     private static final String TEXT = "mobile number";
-    private static final String TEXT_TWO = "Your mobile number is only used for authentication and will not be shared with anyone.";
+    private static final String TEXT_TWO = "Your mobile number is only used for authentication and will not be shared" + "\n" + "with anyone.";
     private Context mContext = this;
 
     @Override
@@ -32,50 +32,41 @@ public class ContactNumberActivity extends AppCompatActivity {
 
     public void init(){
 
-        int textSize = 30;
-        int textSizeTwo = 20;
-        int textSizeThree = 14;
-        int textSizeFour = 18;
-        int textSizeFive = 16;
-
-        Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/Colfax-Medium.otf");
-        Typeface typeface1 = Typeface.createFromAsset(getAssets(), "fonts/Colfax-Regular.otf");
-
         TextView textView = (TextView) findViewById(R.id.txt_view_contact_number);
         textView.setText(HEADING);
-        textView.setTextSize(textSize);
-        textView.setTypeface(typeface);
+        textView.setTextSize(30);
+        textView.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
 
         TextView textView1 = (TextView) findViewById(R.id.txt_view_contact_number_country);
         textView1.setText(COUNTRY_CODE);
-        textView1.setTextSize(textSizeTwo);
-        textView1.setTypeface(typeface);
+        textView1.setTextSize(20);
+        textView1.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView1.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextDarkGrey));
 
         TextView textView2 = (TextView) findViewById(R.id.txt_view_contact_number_divider);
         textView2.setText("|");
-        textView2.setTextSize(textSizeTwo);
-        textView2.setTypeface(typeface);
+        textView2.setTextSize(20);
+        textView2.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView2.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextDarkGrey));
 
         EditText editText = (EditText) findViewById(R.id.txt_view_contact_number_number);
         editText.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
         editText.setInputType(InputType.TYPE_CLASS_PHONE);
-        editText.setTextSize(textSizeTwo);
-        editText.setTypeface(typeface);
+        editText.setTextSize(20);
+        editText.setTypeface(FontUtil.getColfaxMedium(mContext));
 
         TextView textView3 = (TextView) findViewById(R.id.txt_view_contact_number_text);
         textView3.setText(TEXT);
-        textView3.setTextSize(textSizeThree);
-        textView3.setTypeface(typeface);
+        textView3.setTextSize(14);
+        textView3.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView3.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
         textView3.setAllCaps(true);
 
         TextView textView4 = (TextView) findViewById(R.id.txt_view_contact_number_text_two);
         textView4.setText(TEXT_TWO);
-        textView4.setTextSize(textSizeFive);
-        textView4.setTypeface(typeface1);
+        textView4.setTextSize(16);
+        textView4.setTypeface(FontUtil.getColfaxRegular(mContext));
         textView4.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
         textView4.setAllCaps(false);
 
@@ -87,8 +78,8 @@ public class ContactNumberActivity extends AppCompatActivity {
         button.setText("Next");
         button.setAllCaps(false);
         button.setTextColor(ContextCompat.getColor(mContext,R.color.colorText));
-        button.setTypeface(typeface);
-        button.setTextSize(textSizeFour);
+        button.setTypeface(FontUtil.getColfaxMedium(mContext));
+        button.setTextSize(18);
         button.setStateListAnimator(null);
 
     }

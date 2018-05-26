@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities;
+package ae.arcab.arcab.Activities.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import ae.arcab.arcab.Activities.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -31,18 +32,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void init(){
 
-        int textSize = 32;
-        int btnTextSize = 18;
-        int textSizePolicy = 16;
-
-        Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/Colfax-Medium.otf");
-        Typeface typeface1 = Typeface.createFromAsset(getAssets(), "fonts/Colfax-Regular.otf");
-
         TextView textView = (TextView) findViewById(R.id.txt_view_login);
         textView.setText(TAG_LINE);
-        textView.setTextSize(textSize);
+        textView.setTextSize(32);
         textView.setTypeface(null, Typeface.BOLD);
-        textView.setTypeface(typeface);
+        textView.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
 
         ImageView imageView = (ImageView) findViewById(R.id.img_view_login);
@@ -51,23 +45,23 @@ public class LoginActivity extends AppCompatActivity {
         Button btnContactNumber = (Button) findViewById(R.id.btn_mobile_number);
         btnContactNumber.setText(BTN_CONTACT_NUMBER_TEXT);
         btnContactNumber.setAllCaps(false);
-        btnContactNumber.setTextSize(btnTextSize);
+        btnContactNumber.setTextSize(18);
         btnContactNumber.setTextColor(ContextCompat.getColor(mContext,R.color.colorText));
-        btnContactNumber.setTypeface(typeface);
+        btnContactNumber.setTypeface(FontUtil.getColfaxMedium(mContext));
         btnContactNumber.setStateListAnimator(null);
 
         Button btnSocialMedia = (Button) findViewById(R.id.btn_social_media);
         btnSocialMedia.setText(BTN_CONTACT_SOCIAL_MEDIA);
         btnSocialMedia.setAllCaps(false);
-        btnSocialMedia.setTextSize(btnTextSize);
+        btnSocialMedia.setTextSize(18);
         btnSocialMedia.setTextColor(ContextCompat.getColor(mContext,R.color.colorTextPink));
-        btnSocialMedia.setTypeface(typeface);
+        btnSocialMedia.setTypeface(FontUtil.getColfaxMedium(mContext));
         btnSocialMedia.setStateListAnimator(null);
 
         TextView textView1 = (TextView) findViewById(R.id.txt_view_login_policy);
         textView1.setText(POLICY_TEXT);
-        textView1.setTypeface(typeface1);
-        textView1.setTextSize(textSizePolicy);
+        textView1.setTypeface(FontUtil.getColfaxRegular(mContext));
+        textView1.setTextSize(16);
         textView1.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
 
     }

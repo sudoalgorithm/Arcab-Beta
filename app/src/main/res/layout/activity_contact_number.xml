@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activities.ContactNumberActivity">
+    tools:context=".Activities.Activities.ContactNumberActivity">
 
     <TextView
         android:id="@+id/txt_view_contact_number"

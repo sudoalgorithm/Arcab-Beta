@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities;
+package ae.arcab.arcab.Activities.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import ae.arcab.arcab.Activities.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,14 +34,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
-        int textSize = 32;
 
-        Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/Colfax-Medium.otf");
+
         TextView textView = (TextView) findViewById(R.id.txt_view_main);
         textView.setText(TAG_LINE);
-        textView.setTextSize(textSize);
+        textView.setTextSize(32);
         textView.setTypeface(null, Typeface.BOLD);
-        textView.setTypeface(typeface);
+        textView.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView.setTextColor(ContextCompat.getColor(mContext, R.color.colorText));
 
         ImageView imageView = (ImageView) findViewById(R.id.img_view_main);

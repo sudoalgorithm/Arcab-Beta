@@ -1,8 +1,7 @@
-package ae.arcab.arcab.Activities;
+package ae.arcab.arcab.Activities.Activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,8 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
+import ae.arcab.arcab.Activities.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class VerificationActivity extends AppCompatActivity {
@@ -33,17 +31,10 @@ public class VerificationActivity extends AppCompatActivity {
 
     private void init(){
 
-        int fontSize = 30;
-        int fontSize2 = 14;
-        int fontSize3 = 16;
-
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Colfax-Medium.otf");
-        Typeface typeface1 = Typeface.createFromAsset(getAssets(), "fonts/Colfax-Regular.otf");
-
         TextView textView = (TextView) findViewById(R.id.text_view_verification);
         textView.setText(HEADING);
-        textView.setTextSize(fontSize);
-        textView.setTypeface(typeface);
+        textView.setTextSize(30);
+        textView.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
 
         EditText editText = (EditText) findViewById(R.id.et_verification_one);
@@ -54,23 +45,23 @@ public class VerificationActivity extends AppCompatActivity {
 
         TextView textView1 = (TextView) findViewById(R.id.text_view_verification_second);
         textView1.setText(CODE);
-        textView1.setTextSize(fontSize2);
-        textView1.setTypeface(typeface);
+        textView1.setTextSize(14);
+        textView1.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView1.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
         textView1.setAllCaps(true);
 
         TextView textView2 = (TextView) findViewById(R.id.text_view_verification_thrid);
         textView2.setText(EMN);
-        textView2.setTextSize(fontSize2);
-        textView2.setTypeface(typeface);
+        textView2.setTextSize(14);
+        textView2.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView2.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextPink));
         textView2.setAllCaps(true);
 
 
         TextView textView3 = (TextView) findViewById(R.id.text_view_verification_four);
         textView3.setText(TEXT);
-        textView3.setTextSize(fontSize3);
-        textView3.setTypeface(typeface1);
+        textView3.setTextSize(16);
+        textView3.setTypeface(FontUtil.getColfaxMedium(mContext));
         textView3.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
 
         ImageButton imageButton = (ImageButton) findViewById(R.id.img_btn_back_verify);
@@ -81,8 +72,8 @@ public class VerificationActivity extends AppCompatActivity {
         button.setText("Next");
         button.setAllCaps(false);
         button.setTextColor(ContextCompat.getColor(mContext,R.color.colorText));
-        button.setTypeface(typeface);
-        button.setTextSize(fontSize3);
+        button.setTypeface(FontUtil.getColfaxMedium(mContext));
+        button.setTextSize(16);
         button.setStateListAnimator(null);
 
     }

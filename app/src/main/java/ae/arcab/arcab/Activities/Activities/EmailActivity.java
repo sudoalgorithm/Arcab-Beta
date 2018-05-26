@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities;
+package ae.arcab.arcab.Activities.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

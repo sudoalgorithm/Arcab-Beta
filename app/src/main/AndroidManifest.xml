@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".Activities.Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,21 +17,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.LoginActivity"
+            android:name=".Activities.Activities.LoginActivity"
             android:theme="@style/AppThemeTwo" />
         <activity
-            android:name=".Activities.ContactNumberActivity"
+            android:name=".Activities.Activities.ContactNumberActivity"
             android:theme="@style/AppThemeTwo" />
         <activity
-            android:name=".Activities.SocialAccountActivity"
+            android:name=".Activities.Activities.SocialAccountActivity"
             android:theme="@style/AppThemeTwo" />
         <activity
-            android:name=".Activities.VerificationActivity"
+            android:name=".Activities.Activities.VerificationActivity"
             android:theme="@style/AppThemeTwo" />
         <activity
-            android:name=".Activities.NameActivity"
+            android:name=".Activities.Activities.NameActivity"
             android:theme="@style/AppThemeTwo" />
-        <activity android:name=".Activities.EmailActivity"
+        <activity android:name=".Activities.Activities.EmailActivity"
             android:theme="@style/AppThemeTwo"
             ></activity>
     </application>
