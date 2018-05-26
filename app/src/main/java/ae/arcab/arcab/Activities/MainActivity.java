@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities.Activities;
+package ae.arcab.arcab.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import ae.arcab.arcab.Activities.Utils.FontUtil;
+import ae.arcab.arcab.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class MainActivity extends AppCompatActivity {

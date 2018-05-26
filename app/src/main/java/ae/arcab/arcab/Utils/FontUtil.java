@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities.Utils;
+package ae.arcab.arcab.Utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

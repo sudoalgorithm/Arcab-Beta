@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities.Activities;
+package ae.arcab.arcab.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import ae.arcab.arcab.Activities.Utils.FontUtil;
+import ae.arcab.arcab.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class VerificationActivity extends AppCompatActivity {
@@ -61,7 +61,7 @@ public class VerificationActivity extends AppCompatActivity {
         TextView textView3 = (TextView) findViewById(R.id.text_view_verification_four);
         textView3.setText(TEXT);
         textView3.setTextSize(16);
-        textView3.setTypeface(FontUtil.getColfaxMedium(mContext));
+        textView3.setTypeface(FontUtil.getColfaxRegular(mContext));
         textView3.setTextColor(ContextCompat.getColor(mContext, R.color.colorTextBlack));
 
         ImageButton imageButton = (ImageButton) findViewById(R.id.img_btn_back_verify);

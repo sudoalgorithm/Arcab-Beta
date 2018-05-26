@@ -9,31 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Activities.MainActivity">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activities.Activities.LoginActivity"
-            android:theme="@style/AppThemeTwo" />
-        <activity
-            android:name=".Activities.Activities.ContactNumberActivity"
-            android:theme="@style/AppThemeTwo" />
-        <activity
-            android:name=".Activities.Activities.SocialAccountActivity"
-            android:theme="@style/AppThemeTwo" />
-        <activity
-            android:name=".Activities.Activities.VerificationActivity"
-            android:theme="@style/AppThemeTwo" />
-        <activity
-            android:name=".Activities.Activities.NameActivity"
-            android:theme="@style/AppThemeTwo" />
-        <activity android:name=".Activities.Activities.EmailActivity"
-            android:theme="@style/AppThemeTwo"
-            ></activity>
+        <activity android:name=".Activities.LoginActivity"/>
+        <activity android:name=".Activities.ContactNumberActivity" />
+        <activity android:name=".Activities.SocialAccountActivity" />
+        <activity android:name=".Activities.VerificationActivity"/>
+        <activity android:name=".Activities.NameActivity"/>
+        <activity android:name=".Activities.EmailActivity"/>
+        <activity android:name=".Activities.PasswordAcitivity"/>
+        <activity android:name=".Activities.DetailActivity"/>
     </application>
 
 </manifest>

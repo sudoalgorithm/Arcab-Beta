@@ -1,4 +1,4 @@
-package ae.arcab.arcab.Activities.Activities;
+package ae.arcab.arcab.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import ae.arcab.arcab.Activities.Utils.FontUtil;
+import ae.arcab.arcab.Utils.FontUtil;
 import ae.arcab.arcab.R;
 
 public class NameActivity extends AppCompatActivity {
@@ -22,6 +22,7 @@ public class NameActivity extends AppCompatActivity {
     private Context mContext = this;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +31,6 @@ public class NameActivity extends AppCompatActivity {
     }
 
     public void init(){
-
-
-
-
-
 
         TextView textView = (TextView) findViewById(R.id.text_view_name);
         textView.setText(HEADING);
@@ -47,12 +43,10 @@ public class NameActivity extends AppCompatActivity {
         editText1.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
         editText1.setTextSize(20);
 
-
         EditText editText2 = (EditText) findViewById(R.id.et_last_name_activity);
         editText2.setTypeface(FontUtil.getColfaxMedium(mContext));
         editText2.setTextColor(ContextCompat.getColor(this, R.color.colorTextBlack));
         editText2.setTextSize(20);
-
 
         TextView textView2 = (TextView) findViewById(R.id.text_view_name_activity_one);
         textView2.setText(FIRST);
@@ -79,8 +73,6 @@ public class NameActivity extends AppCompatActivity {
         button.setTypeface(FontUtil.getColfaxMedium(mContext));
         button.setTextSize(18);
         button.setStateListAnimator(null);
-
-
     }
 
     public void onBackClickName(View view){
